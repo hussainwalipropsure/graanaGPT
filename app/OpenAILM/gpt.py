@@ -19,7 +19,7 @@ import requests
 
 from Tools.store_manager.retriever import get_retriever, get_relevant_text
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "sdaf"
 os.environ['model_name'] = "gpt-3.5-turbo-0613"
 
 # Set up a prompt template
@@ -75,7 +75,7 @@ class GPTLLm:
         self.model_name = "gpt-3.5-turbo-0613"
 
         self.llm = OpenAI(
-                openai_api_key="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", 
+                openai_api_key="sdfd", 
                 max_tokens=300,
                 model_name=self.model_name,
                 temperature=0.1
@@ -176,7 +176,7 @@ class GPTLLm:
 
     def getAnswerLangchainAgent(self, query, chat_history=[]):
  
-        llm = ChatOpenAI(openai_api_key="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",  model_name="gpt-3.5-turbo", max_tokens=512, temperature=0)
+        llm = ChatOpenAI(openai_api_key="slkj",  model_name="gpt-3.5-turbo", max_tokens=512, temperature=0)
          
         message_history = RedisChatMessageHistory(url='redis://localhost:6379/0', ttl=600, session_id='my-session')
         memory = ConversationBufferMemory(memory_key="chat_history", chat_memory=message_history)
