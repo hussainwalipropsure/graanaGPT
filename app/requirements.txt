@@ -1,0 +1,8 @@
+flask
+gunicorn
+
+fuzzywuzzy
+python-Levenshtein
+openai
+faiss-cpu
+langchain
