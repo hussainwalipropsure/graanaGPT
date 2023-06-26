@@ -43,6 +43,7 @@ def run_gpt_custom():
 
         response= parse_output(response)
         users_converstations[sender] = conversation.conversation_history
+        print(f"\n\n users_converstations --->: {users_converstations=}\n")
         
         return [{"recipient_id":sender, "text": response}]
     else:

@@ -19,6 +19,8 @@ def init_message_handle(query, conversation:GPTLLm, chat_history=[]):
         messages=conversation.conversation_history, functions=functions
     )
     try:
+        print(f"\n\n chat_response --->: {chat_response=}\n")
+        
         assistant_message = chat_response["choices"][0]["message"]["content"]
 
     except Exception as e:

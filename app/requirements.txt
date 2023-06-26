@@ -6,3 +6,4 @@ python-Levenshtein
 openai
 faiss-cpu
 langchain
+python-dotenv
